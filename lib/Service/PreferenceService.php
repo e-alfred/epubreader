@@ -8,9 +8,9 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_Reader\Service;
+namespace OCA\Epubreader\Service;
 
-use OCA\Files_Reader\Db\PreferenceMapper;
+use OCA\Epubreader\Db\PreferenceMapper;
 
 class PreferenceService extends Service {
 

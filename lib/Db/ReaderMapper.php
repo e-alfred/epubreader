@@ -8,13 +8,13 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_Reader\Db;
+namespace OCA\Epubreader\Db;
 
 use OCP\IDBConnection;
 use OCP\AppFramework\Db\Mapper;
 use OCP\AppFramework\Db\Entity;
 
-use OCA\Files_Reader\Utility\Time;
+use OCA\Epubreader\Utility\Time;
 
 abstract class ReaderMapper extends Mapper {
 

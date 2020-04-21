@@ -8,14 +8,14 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_Reader\Controller;
+namespace OCA\Epubreader\Controller;
 
 use OCP\IRequest;
 use OCP\IURLGenerator;
 use OCP\AppFramework\Http;
 use OCP\AppFramework\Controller;
 
-use OCA\Files_Reader\Service\PreferenceService;
+use OCA\Epubreader\Service\PreferenceService;
 
 class PreferenceController extends Controller {
 

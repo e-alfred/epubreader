@@ -490,7 +490,7 @@ ComicBook = (function ($) {
 
             if (parent !== window) {
                 $('.close').removeClass('hide');
-                $('.close').on('click', function() { parent.OCA.Files_Reader.Plugin.hide(); });
+                $('.close').on('click', function() { parent.OCA.Epubreader.Plugin.hide(); });
             }
         };
 

@@ -8,7 +8,7 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_Reader;
+namespace OCA\Epubreader;
 
 use OCP\IDBConnection;
 use OCP\Files\Node;
@@ -19,7 +19,7 @@ use \OC\User\User as User;
 class Hooks {
 
     public static function register() {
-        Util::connectHook('\OCP\Config', 'js', 'OCA\Files_Reader\Hooks', 'announce_settings');
+        Util::connectHook('\OCP\Config', 'js', 'OCA\Epubreader\Hooks', 'announce_settings');
 
         \OC::$server->getRootFolder()->listen('\OC\Files', 'preDelete', function (Node $node) {
             $fileId = $node->getId();

@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ownCloud - Files_Reader App
+ * ownCloud - Epubreader App
  *
  * @author Frank de Lange
  * @copyright 2015 Frank de Lange
@@ -10,7 +10,7 @@
  * later.
  */
 
-$this->create('reader_personal_settings', 'ajax/personal.php')->actionInclude('files_reader/ajax/personal.php');
+$this->create('reader_personal_settings', 'ajax/personal.php')->actionInclude('epubreader/ajax/personal.php');
 
 return ['routes' => [
     // Page

@@ -8,14 +8,14 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_Reader\Controller;
+namespace OCA\Epubreader\Controller;
 
 use OCP\IRequest;
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\DataResponse;
 
 
-use OCA\Files_Reader\Service\BookmarkService;
+use OCA\Epubreader\Service\BookmarkService;
 
 class BookmarkController extends Controller {
 

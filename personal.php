@@ -1,6 +1,6 @@
 <?php
 /**
- * ownCloud - Files_Reader app
+ * ownCloud - Epubreader app
  *
  * Copyright (c) 2014,2018 Frank de Lange
  * This file is licensed under the Affero General Public License version 3 or
@@ -8,13 +8,13 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_Reader;
+namespace OCA\Epubreader;
 
 use OCP\Util;
 
-#$l = \OC::$server->getL10N('files_reader');
+#$l = \OC::$server->getL10N('epubreader');
 
-$tmpl = new \OCP\Template('files_reader', 'settings-personal');
+$tmpl = new \OCP\Template('epubreader', 'settings-personal');
 $EpubEnable = Config::get('epub_enable', 'true');
 $PdfEnable = Config::get('pdf_enable', 'true');
 $CbxEnable = Config::get('cbx_enable', 'true');

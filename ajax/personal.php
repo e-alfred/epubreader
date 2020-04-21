@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ownCloud - Files_Reader App
+ * ownCloud - Epubreader App
  *
  * @author Frank de Lange
  * @copyright 2014,2018 Frank de Lange
@@ -10,12 +10,12 @@
  * later.
  */
 
-namespace OCA\Files_Reader;
+namespace OCA\Epubreader;
 
 \OC_JSON::callCheck();
 \OC_JSON::checkLoggedIn();
 
-$l = \OC::$server->getL10N('files_reader');
+$l = \OC::$server->getL10N('epubreader');
 
 $EpubEnable = isset($_POST['EpubEnable']) ? $_POST['EpubEnable'] : 'false';
 $PdfEnable = isset($_POST['PdfEnable']) ? $_POST['PdfEnable'] : 'false';
