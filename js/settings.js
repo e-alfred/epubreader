@@ -9,7 +9,7 @@ $(document).ready(function(){
             };
 
             OC.msg.startSaving('#reader-personal .msg');
-            $.post(OC.filePath('files_reader', 'ajax', 'personal.php'), data, readerSettings.afterSave);
+            $.post(OC.filePath('epubreader', 'ajax', 'personal.php'), data, readerSettings.afterSave);
         },
         afterSave : function(data){
             OC.msg.finishedSaving('#reader-personal .msg', data);
@@ -19,4 +19,3 @@ $(document).ready(function(){
     $('#PdfEnable').on("change", readerSettings.save);
     $('#CbxEnable').on("change", readerSettings.save);
 });
-

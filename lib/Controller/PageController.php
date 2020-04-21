@@ -8,7 +8,7 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_Reader\Controller;
+namespace OCA\Epubreader\Controller;
 
 use OCP\AppFramework\Controller;
 use OCP\AppFramework\Http\TemplateResponse;
@@ -20,9 +20,9 @@ use OCP\Share\IManager;
 use OCP\Files\FileInfo;
 use OCP\Files\NotFoundException;
 
-use OCA\Files_Reader\Service\BookmarkService;
-use OCA\Files_Reader\Service\MetadataService;
-use OCA\Files_Reader\Service\PreferenceService;
+use OCA\Epubreader\Service\BookmarkService;
+use OCA\Epubreader\Service\MetadataService;
+use OCA\Epubreader\Service\PreferenceService;
 
 class PageController extends Controller {
 

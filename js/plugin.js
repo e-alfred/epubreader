@@ -12,7 +12,7 @@
 
 (function(OCA) {
 
-	OCA.Files_Reader = OCA.Files_Reader || {};
+	OCA.Epubreader = OCA.Epubreader || {};
 
 	var isMobile = navigator.userAgent.match(/Mobi/i);
 	var hasTouch = 'ontouchstart' in document.documentElement;
@@ -29,13 +29,13 @@
 		} else {
 			downloadUrl = Files.getDownloadUrl(fileName, context.dir);
 		}
-		OCA.Files_Reader.Plugin.show(downloadUrl, mime, true);
+		OCA.Epubreader.Plugin.show(downloadUrl, mime, true);
 	}
 
 	/**
-	 * @namespace OCA.Files_Reader.Plugin
+	 * @namespace OCA.Epubreader.Plugin
 	 */
-	OCA.Files_Reader.Plugin = {
+	OCA.Epubreader.Plugin = {
 
 		/**
 		 * @param fileList
@@ -75,7 +75,7 @@
 		 */
 		show: function(downloadUrl, mimeType, isFileList) {
 			var self = this;
-      var viewer = OC.generateUrl('/apps/files_reader/?file={file}&type={type}', {file: downloadUrl, type: mimeType});
+      var viewer = OC.generateUrl('/apps/epubreader/?file={file}&type={type}', {file: downloadUrl, type: mimeType});
 			// launch in new window on all devices
 			window.open(viewer, downloadUrl);
     },
@@ -140,7 +140,7 @@
 
 })(OCA);
 
-OC.Plugins.register('OCA.Files.FileList', OCA.Files_Reader.Plugin);
+OC.Plugins.register('OCA.Files.FileList', OCA.Epubreader.Plugin);
 
 // FIXME: Hack for single public file view since it is not attached to the fileslist
 $(document).ready(function(){
@@ -151,7 +151,7 @@ $(document).ready(function(){
     ) {
 		var sharingToken = $('#sharingToken').val();
 		var downloadUrl = OC.generateUrl('/s/{token}/download', {token: sharingToken});
-		var viewer = OCA.Files_Reader.Plugin;
+		var viewer = OCA.Epubreader.Plugin;
 		var mime = $('#mimetype').val();
 		viewer.show(downloadUrl, mime, false);
 	}

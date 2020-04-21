@@ -8,9 +8,9 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_Reader\Db;
+namespace OCA\Epubreader\Db;
 
-use OCA\Files_Reader\Utility\Time;
+use OCA\Epubreader\Utility\Time;
 use OCP\IDBConnection;
 
 class PreferenceMapper extends ReaderMapper {

@@ -8,10 +8,10 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_Reader\Service;
+namespace OCA\Epubreader\Service;
 
 
-use OCA\Files_Reader\Db\BookmarkMapper;
+use OCA\Epubreader\Db\BookmarkMapper;
 
 class BookmarkService extends Service {
 

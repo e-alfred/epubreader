@@ -8,7 +8,7 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_Reader\Utility;
+namespace OCA\Epubreader\Utility;
 
 class Time {
     public function getTime() {

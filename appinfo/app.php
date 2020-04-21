@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ownCloud - Files_Reader App
+ * ownCloud - Epubreader App
  *
  * @author Frank de Lange
  * @copyright 2015 - 2017 Frank de Lange
@@ -10,13 +10,13 @@
  * later.
  */
 
-namespace OCA\Files_Reader\AppInfo;
+namespace OCA\Epubreader\AppInfo;
 
 use OCP\AppFramework\App;
 use OCP\Util;
 
-$l = \OC::$server->getL10N('files_reader');
+$l = \OC::$server->getL10N('epubreader');
 
-\OCA\Files_Reader\Hooks::register();
-Util::addscript('files_reader', 'plugin');
-\OCP\App::registerPersonal('files_reader', 'personal');
+\OCA\Epubreader\Hooks::register();
+Util::addscript('epubreader', 'plugin');
+\OCP\App::registerPersonal('epubreader', 'personal');

@@ -1,4 +1,4 @@
-files_reader
+epubreader
 ------------
 
 Reader is an ebook reader based on pure javascript renderers. It works for publications formatted according to the following standards:
@@ -110,8 +110,8 @@ The same Android device showing a zoomed-in part of a page|![The same Android de
    [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader
    [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format
    [pdf.js]: https://github.com/mozilla/pdf.js
-   [SS01]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/files_reader-1.png "Reader showing day/nighyt mode"
-   [SS02]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/files_reader-3.png "Single page full screen on a small-screen device"
+   [SS01]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader-1.png "Reader showing day/nighyt mode"
+   [SS02]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader-3.png "Single page full screen on a small-screen device"
    [SS03]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/photo_2017-03-15_17-21-39.jpg "Day mode color selector"
    [SS04]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/photo_2017-03-15_17-21-41.jpg?raw=true "Longing For that olde-time terminal feeling..."
    [SS05]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/photo_2017-03-15_17-21-53.jpg "Full-text search"
@@ -128,7 +128,7 @@ The same Android device showing a zoomed-in part of a page|![The same Android de
    [SS16]: https://github.com/e-alfred/epubreader/blob/master/screenshots/photo_2017-03-15_17-22-10.jpg?raw=true "Same page, zoomed in"
    [SS17]: https://github.com/e-alfred/epubreader/blob/master/screenshots/photo_2017-03-15_18-28-54.jpg?raw=true "Small-screen, low memory (Android) device showing full-page book cover"
    [SS18]: https://github.com/e-alfred/epubreader/blob/master/screenshots/photo_2017-03-15_18-28-56.jpg?raw=true "The same Android device showing a zoomed-in part of a page"
-   [SS19]: https://github.com/e-alfred/epubreader/blob/master/screenshots/files_reader_PDF_001.png?raw=true "Search through a document, showing all results in the sidebar"
-   [SS20]: https://github.com/e-alfred/epubreader/blob/master/screenshots/files_reader_PDF_002.png?raw=true "Reader showing PDF Reference document in spread mode (pages side by side)"
-   [SS21]: https://github.com/e-alfred/epubreader/blob/master/screenshots/files_reader_PDF_005.png?raw=true "Dropdown showing page format options - spread, single page, page width and zoom options"
-   [SS22]: https://github.com/e-alfred/epubreader/blob/master/screenshots/files_reader_PDF_006.png?raw=true "Reader showing PDF in spread mode, thumbnails in the sidebar"
+   [SS19]: https://github.com/e-alfred/epubreader/blob/master/screenshots/epubreader_PDF_001.png?raw=true "Search through a document, showing all results in the sidebar"
+   [SS20]: https://github.com/e-alfred/epubreader/blob/master/screenshots/epubreader_PDF_002.png?raw=true "Reader showing PDF Reference document in spread mode (pages side by side)"
+   [SS21]: https://github.com/e-alfred/epubreader/blob/master/screenshots/epubreader_PDF_005.png?raw=true "Dropdown showing page format options - spread, single page, page width and zoom options"
+   [SS22]: https://github.com/e-alfred/epubreader/blob/master/screenshots/epubreader_PDF_006.png?raw=true "Reader showing PDF in spread mode, thumbnails in the sidebar"

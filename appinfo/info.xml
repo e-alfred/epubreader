@@ -26,7 +26,7 @@ See [README] for more exhaustive information on features and potential misfeatur
    [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader
    [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format
    [pdf.js]: https://github.com/mozilla/pdf.js
-   [README]: https://github.com/e-alfred/epubreader/blob/master/files_reader/README.md
+   [README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md
 	]]>
     </description>
     <version>1.4.1</version>
@@ -36,10 +36,10 @@ See [README] for more exhaustive information on features and potential misfeatur
     <documentation>https://github.com/e-alfred/epubreader</documentation>
     <bugs>https://github.com/e-alfred/epubreader</bugs>
     <website>https://github.com/e-alfred/epubreader</website>
-    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/files_reader-1.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/files_reader-3.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/files_reader_PDF_005.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/files_reader_PDF_006.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader-1.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader-3.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader_PDF_005.png</screenshot>
+    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader_PDF_006.png</screenshot>
 	<screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/photo_2017-03-15_17-22-00.jpg</screenshot>
     <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/photo_2017-03-15_17-22-02.jpg</screenshot>
     <category>files</category>

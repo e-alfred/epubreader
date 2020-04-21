@@ -8,7 +8,7 @@
  * See the COPYING-README file.
  */
 
-namespace OCA\Files_Reader\Service;
+namespace OCA\Epubreader\Service;
 
 use OCP\App\IAppManager;
 
