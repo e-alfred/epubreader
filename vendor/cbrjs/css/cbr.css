@@ -1,0 +1,454 @@
+/* reader */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.cbr-control {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 12px;
+}
+
+.cbr-control {
+	color: #fff;
+	background-color: #111;
+	padding: 10px;
+	position: fixed !important;
+	box-shadow: 0 0 4px #000;
+}
+
+.navigate {
+	top: 0;
+	margin: 0;
+	cursor: pointer;
+	width: 20%;
+	opacity: 0;
+	background: center no-repeat;
+	box-shadow: none;
+	padding: 0 3em;
+}
+
+.navigate > span {
+	color: #000;
+	font-size: 10em;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 1em;
+	top: 45%;
+	position: relative;
+}
+
+body:not(.mobile) .navigate:hover {
+	opacity: 1;
+}
+
+.navigate-left {
+	left: 0;
+}
+
+.navigate-left > span {
+    float: left;
+}
+
+.navigate-right {
+	right: 0;
+}
+
+.navigate-right > span {
+    float: right;
+}
+
+.toggle-controls {
+    cursor: pointer;
+    width: 20%;
+    height: 20%;
+    left: 40%;
+    top: 40%;
+    border: none;
+    position: fixed;
+}
+
+#cbr-loading-overlay {
+	z-index: 100;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+}
+
+#cbr-loading-overlay > img {
+	width: 100%;
+}
+
+.overlay {
+    opacity: 0.7;
+	box-shadow: none;
+}
+
+#cbr-status {
+	z-index: 101;
+	font-size: 12px;
+	right: 0;
+	bottom: 0;
+	margin: 8px;
+	border-radius: 4px;
+}
+
+#cbr-progress-bar {
+	width: 200px;
+}
+
+#cbr-progress-bar,
+#cbr-progress-bar .progressbar-value {
+	height: 3px;
+}
+
+#cbr-progress-bar .progressbar-value {
+	width: 0;
+	background: #86C441;
+	border-color: #3E7600;
+}
+
+* {
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #333;
+}
+
+button,
+input,
+label {
+	cursor: pointer;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.toolbar,
+.panels {
+    position: absolute;
+	color: white;
+	/* overflow: visible; */
+    background: #4e4e4e;
+	/* left: 0; */
+	/* right: 0; */
+    width: 100%;
+}
+
+.toolbar {
+	/* position: fixed; */
+	z-index: 99;
+	/*  margin-bottom: 0; */
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+	opacity: 0;
+	transition: opacity 0.1s ease-in-out;
+	text-align: center;
+}
+
+.toolbar .metainfo {
+	font-size: 1.2em;
+    top: 0.5em;
+}
+
+.metainfo span {
+    margin: 0 0.5em;
+}
+
+.mobile .metainfo .book-title,
+.mobile .metainfo .title-separator {
+    display: none;
+}
+
+body:not(.mobile) .toolbar:hover,
+.mobile .toolbar,
+.toolbar.open {
+	opacity: 1;
+}
+
+.toolbar div {
+    display: inline-block;
+    position: relative;
+}
+
+.toolbar .separator {
+	/* border: solid 1px; */
+	height: 1em;
+	opacity: 0.5;
+}
+
+.toolbar button, .sidebar button {
+	color: white;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+.toolbar div > button,
+.sidebar div > button {
+	font-size: 1.5em;
+	padding: 0.5em;
+    margin: 0;
+}
+
+.mobile .toolbar div > button,
+.mobile .sidebar div > button {
+	padding: 0.5em;
+    margin: 0;
+}
+
+body:not(.mobile) .toolbar div > button:hover,
+body:not(.mobile) .sidebar div > button:hover {
+	color: #8CC746;
+}
+
+body:not(.mobile) .toolbar button[data-action=close]:hover {
+	color: #FF6464;
+}
+
+.hide {
+	display: none !important;
+}
+
+/* sidebar */
+.sidebar.open {
+  box-shadow: 3px 0px 3px 0px rgba(0, 0, 0, 0.4);
+  display: block;
+}
+
+.sidebar {
+  background: #6b6b6b;
+  position: fixed;
+  top: 0;
+  min-width: 25em;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+  z-index: 100;
+}
+
+.sidebar.wide {
+    width: 20%;
+}
+
+.panels {
+  overflow: hidden;
+}
+
+.panels .open {
+    background-color: #6B6B6B;
+}
+
+.view.open {
+    display: block !important;
+}
+
+#toc-populate.open {
+    display: inline-block !important;
+    background-color: #4e4e4e;
+}
+
+.view {
+  overflow-y: scroll;
+  display: none !important;
+  width: 100%;
+  position: absolute;
+  top: 3em;
+  bottom: 0;
+  text-align: center;
+}
+
+.toc-view li {
+  margin: 1em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.toc-view img, .placeholder {
+  width: 100%;
+  position: relative;
+  background-color: #999;
+}
+
+.toc-view span {
+    position: absolute;
+    transform: translate3d(-3em, 3em, 0);
+    font-size: 5em;
+    font-weight: bold;
+    color: #F8F8F8;
+    text-shadow: 0.05em 0.05em 0.02em rgba(70, 70, 70, 0.8);
+    -webkit-text-stroke: 2px black;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 1em;
+    box-shadow: 0 0 0.3em rgba(255,255,255,1);
+    padding: 0.5em;
+}
+
+.settings-container {
+    text-align: left;
+    display: inline-block;
+    width: 95%;
+	font-size: 1em;
+	background: #F8F8F8;
+	color: #111;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+	border-radius: 4px;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.settings-container label {
+    margin-right: 1em;
+}
+
+.settings-container > label {
+    font-weight: bold;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.view .control-group input[type=range] {
+	width: 80%;
+	float: right;
+	margin: 0;
+}
+
+.view .control-group {
+	padding: 1em;
+}
+
+.view .sliders {
+	font-size: 1.5em;
+}
+
+.view .control-group span {
+	float: left;
+	margin: 0 2px;
+	clear: both;
+}
+
+.view .control-group input[type=reset] {
+    float: right;
+}
+
+.metadata {
+    padding: 1em;
+    margin: 1em;
+}
+
+.metadata table {
+    font-size: 1.2em;
+	color: #F8F8F8;
+}
+
+.metadata td:nth-child(1) {
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+/* END sidebar */
+
+/* progressbar (loading/unarchiving) */
+
+.progress, .bar {
+	width: 100%;
+	height: 0.3em;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+.progress {
+	border: none;
+}
+.bar {
+	width: 0;
+	background-color: red;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.6);
+}
+
+.message {
+	margin: 3em;
+}
+
+.message-icons {
+    font-size: 3em;
+    color: lightgrey;
+    vertical-align: middle;
+}
+
+.message-text {
+	font-size: 1.5em;
+    color: black;
+}
+
+.active {
+    color:black;
+}
+
+.ok {
+    color:green;
+}
+
+.error {
+    color:red;
+}
+
+/* END progressbar */

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<database>
+	<name>*dbname*</name>
+	<create>true</create>
+	<overwrite>false</overwrite>
+	<charset>utf8</charset>
+
+	<table>
+		<name>*dbprefix*reader_bookmarks</name>
+		<declaration>
+			<field>
+				<!-- id -->
+				<name>id</name>
+				<type>integer</type>
+				<notnull>true</notnull>
+				<autoincrement>true</autoincrement>
+				<unsigned>true</unsigned>
+				<primary>true</primary>
+				<length>8</length>
+			</field>
+
+			<field>
+				<!-- user ID, maps bookmark to NC/OC user -->
+				<name>user_id</name>
+				<type>text</type>
+				<default></default>
+				<notnull>true</notnull>
+				<length>64</length>
+			</field>
+
+			<field>
+                <!-- file ID, maps to NC/OC file ID -->
+				<name>file_id</name>
+				<type>integer</type>
+				<notnull>true</notnull>
+				<unsigned>true</unsigned>
+				<length>11</length>
+                </field>
+
+			<field>
+				<!-- type (bookmark, annotation, etc) -->
+				<name>type</name>
+				<type>text</type>
+				<default></default>
+				<notnull>true</notnull>
+				<length>32</length>
+			</field>
+
+			<field>
+				<!-- name -->
+				<name>name</name>
+				<type>text</type>
+				<default></default>
+				<notnull>true</notnull>
+				<length>512</length>
+			</field>
+
+			<field>
+				<!-- value -->
+				<name>value</name>
+				<type>text</type>
+				<default></default>
+				<notnull>true</notnull>
+				<length>512</length>
+                </field>
+
+			<field>
+				<!-- content -->
+				<name>content</name>
+				<type>text</type>
+				<default></default>
+				<notnull>false</notnull>
+				<length>4096</length>
+			</field>
+
+			<field>
+				<!-- last_modified -->
+				<name>last_modified</name>
+				<type>integer</type>
+				<default>0</default>
+				<length>8</length>
+				<notnull>false</notnull>
+				<unsigned>true</unsigned>
+			</field>
+
+			<index>
+				<name>reader_bookmarks_file_id_index</name>
+				<field>
+					<name>file_id</name>
+				</field>
+			</index>
+
+			<index>
+				<name>reader_bookmarks_user_id_index</name>
+				<field>
+					<name>user_id</name>
+				</field>
+			</index>
+
+            <index>
+				<name>reader_bookmarks_name_index</name>
+				<field>
+					<name>name</name>
+				</field>
+            </index>
+
+		</declaration>
+	</table>
+
+	<table>
+		<name>*dbprefix*reader_preferences</name>
+		<declaration>
+			<field>
+				<!-- id -->
+				<name>id</name>
+				<type>integer</type>
+				<notnull>true</notnull>
+				<autoincrement>true</autoincrement>
+				<unsigned>true</unsigned>
+				<primary>true</primary>
+				<length>8</length>
+			</field>
+
+			<field>
+				<!-- user ID, maps preference to NC/OC user -->
+				<name>user_id</name>
+				<type>text</type>
+				<default></default>
+				<notnull>true</notnull>
+				<length>64</length>
+			</field>
+
+			<field>
+				<!-- file ID, maps to NC/OC file ID -->
+				<name>file_id</name>
+				<type>integer</type>
+				<notnull>true</notnull>
+				<unsigned>true</unsigned>
+				<length>11</length>
+            </field>
+
+			<field>
+				<!-- scope -->
+				<name>scope</name>
+				<type>text</type>
+				<default></default>
+				<notnull>true</notnull>
+				<length>32</length>
+			</field>
+
+			<field>
+				<!-- name -->
+				<name>name</name>
+				<type>text</type>
+				<default></default>
+				<notnull>true</notnull>
+				<length>128</length>
+			</field>
+
+			<field>
+				<!-- value -->
+				<name>value</name>
+				<type>text</type>
+				<default></default>
+				<notnull>true</notnull>
+				<length>4096</length>
+			</field>
+
+			<field>
+				<!-- last_modified -->
+				<name>last_modified</name>
+				<type>integer</type>
+				<default>0</default>
+				<length>8</length>
+				<notnull>false</notnull>
+				<unsigned>true</unsigned>
+			</field>
+
+			<index>
+				<name>reader_preferences_file_id_index</name>
+				<field>
+					<name>file_id</name>
+				</field>
+			</index>
+
+			<index>
+				<name>reader_preferences_user_id_index</name>
+				<field>
+					<name>user_id</name>
+				</field>
+			</index>
+
+			<index>
+				<name>reader_preferences_scope_index</name>
+				<field>
+					<name>scope</name>
+				</field>
+			</index>
+
+		</declaration>
+	</table>
+
+</database>	

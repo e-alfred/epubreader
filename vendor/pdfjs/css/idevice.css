@@ -1,0 +1,14 @@
+.notes,
+.search-results,
+.view {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.search-results {
+    height: calc(100% - 5em);
+}
+
+.notes {
+    height: calc(100% - 9em);
+}

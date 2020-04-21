@@ -1,0 +1,5 @@
+ - annotations
+ - rtl and ltr
+ - test canvas size restriction
+ - add IDs to highlights so they can be marked when hovered - or when related list item is hovered
+
