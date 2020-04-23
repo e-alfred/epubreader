@@ -114,21 +114,21 @@
                             <div class="control-group">
                                 <div>
                                     <input type="checkbox" id="custom_font_family" name="font_family">
-                                    <label for="custom_font_family">custom font</label>
+                                    <label for="custom_font_family"><?php print ($l->t ('custom font')); ?></label>
                                     <select id="font_family" disabled="">
                                         <option value="verdana, trebuchet, droid sans serif, sans, sans-serif"> sans </option>
                                         <option value="georgia, times new roman, droid serif, serif"> serif </option>
-                                        <option value="monospace"> monospace </option>
+                                        <option value="monospace"><?php print ($l->t ('monospace')); ?> </option>
                                     </select>
                                 </div>
                                 <div>
                                     <input type="checkbox" id="custom_font_size" name="font_size">
-                                    <label for="custom_font_size">font size</label>
+                                    <label for="custom_font_size"><?php print ($l->t ('font size')); ?></label>
                                     <input type="number" id="font_size" value="100" min="50" max="150" disabled=""> %
                                 </div>
                                 <div>
                                     <input type="checkbox" id="custom_font_weight" name="font_weight">
-                                    <label for="custom_font_weight">font weight</label>
+                                    <label for="custom_font_weight"><?php print ($l->t ('font weight')); ?></label>
                                     <select id="font_weight" disabled="">
                                         <option value="100">thin</option>
                                         <option value="200">extra light</option>
@@ -155,7 +155,7 @@
                                 <div class="control-group">
                                     <input type="checkbox" id="use_custom_colors" name="use_custom_colors">
                                     <label for="use_custom_colors">
-                                        Use custom colors
+                                        <?php print ($l->t ('Use custom colors')); ?>;
                                     </label>
                                     <div class="center-box">
                                     <input type="color" id="day_color" value="#0a0a0a">
@@ -173,7 +173,7 @@
                                 <legend>night</legend>
                                 <div class="control-group">
                                     <div class="center-box nightshift">
-                                    nightmode can be toggled by clicking the book title
+                                    <?php print ($l->t ('nightmode can be toggled by clicking the book title')); ?>;
                                     </div>
                                     <div class="center-box">
                                     <input type="color" id="night_color" value="#454545">
@@ -203,19 +203,19 @@
                             <div class="control-group">
                                 <input type="checkbox" id="sidebarReflow" name="sidebarReflow">
                                 <label for="sidebarReflow">
-                                    reflow text when sidebars are open
+                                    <?php print ($l->t ('reflow text when sidebars are open')); ?>;
                                 </label>
                             </div>
                             <div class="control-group">
                                 <input type="checkbox" id="touch_nav" name="touch_nav">
                                 <label for="touch_nav">
-                                    disable extra-wide page turn areas
+                                    <?php print ($l->t ('disable extra-wide page turn areas')); ?>;
                                 </label>
                             </div>
                             <div class="control-group">
                                 <input type="checkbox" id="page_turn_arrows" name="page_turn_arrows">
                                 <label for="page_turn_arrows">
-                                    show page turn arrows
+                                    <?php print ($l->t ('show page turn arrows')); ?>;
                                 </label>
                             </div>
 
