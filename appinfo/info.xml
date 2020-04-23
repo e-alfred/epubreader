@@ -18,7 +18,7 @@ PDF is handled by Mozilla's [pdf.js] renderer in combination with a custom reade
 
 CBR and CBZ are supported using a custom renderer inspired by [balaclark]'s work. As with Epub, books can be navigated using the keyboard as well as mouse or touch navigation. Reader generates a visual index of all pages, show in the sidebar (thumbnail generation can be disabled for low-memory and/or -speed devices). As CBx files are often of varying quality, a set of image enhancement filters are provided.
 
-See [README] for more exhaustive information on features and potential misfeatures of this app
+See [README] for more exhaustive information on features and potential misfeatures of this app.
 
    [epub.js]: https://github.com/futurepress/epub.js
    [Epub]: http://idpf.org/epub
