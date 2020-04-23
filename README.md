@@ -110,12 +110,12 @@ The same Android device showing a zoomed-in part of a page|![The same Android de
    [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader
    [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format
    [pdf.js]: https://github.com/mozilla/pdf.js
-   [SS01]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader-1.png "Reader showing day/nighyt mode"
-   [SS02]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader-3.png "Single page full screen on a small-screen device"
-   [SS03]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/photo_2017-03-15_17-21-39.jpg "Day mode color selector"
-   [SS04]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/photo_2017-03-15_17-21-41.jpg?raw=true "Longing For that olde-time terminal feeling..."
-   [SS05]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/photo_2017-03-15_17-21-53.jpg "Full-text search"
-   [SS06]: https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/photo_2017-03-15_18-28-46.jpg "Small screen device, __maximize text area__ enabled"
+   [SS01]: https://github.com/e-alfred/epubreader/blob/master/screenshots/epubreader-1.png?raw=true "Reader showing day/nighyt mode"
+   [SS02]: https://github.com/e-alfred/epubreader/blob/master/screenshots/epubreader-3.png?raw=true "Single page full screen on a small-screen device"
+   [SS03]: https://github.com/e-alfred/epubreader/blob/master/screenshots/photo_2017-03-15_17-21-39.jpg "Day mode color selector"
+   [SS04]: https://github.com/e-alfred/epubreader/blob/master/screenshots/screenshots/photo_2017-03-15_17-21-41.jpg?raw=true "Longing For that olde-time terminal feeling..."
+   [SS05]: https://github.com/e-alfred/epubreader/blob/master/screenshots/photo_2017-03-15_17-21-53.jpg "Full-text search"
+   [SS06]: https://github.com/e-alfred/epubreader/blob/master/screenshots/photo_2017-03-15_18-28-46.jpg "Small screen device, __maximize text area__ enabled"
    [SS07]: https://github.com/e-alfred/epubreader/blob/master/screenshots/photo_2017-03-15_18-28-49.jpg?raw=true "Search on small-screen device"
    [SS08]: https://github.com/e-alfred/epubreader/blob/master/screenshots/photo_2017-03-15_17-21-52.jpg?raw=true "As close to full-screen as you can get on iOS"
    [SS09]: https://github.com/e-alfred/epubreader/blob/master/screenshots/Screenshot_2014-09-29-20-21-50.png?raw=true "Android supports true fullscreen (as do most other systems)"

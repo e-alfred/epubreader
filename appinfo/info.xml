@@ -36,16 +36,16 @@ See [README] for more exhaustive information on features and potential misfeatur
     <documentation>https://github.com/e-alfred/epubreader</documentation>
     <bugs>https://github.com/e-alfred/epubreader</bugs>
     <website>https://github.com/e-alfred/epubreader</website>
-    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader-1.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader-3.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader_PDF_005.png</screenshot>
-    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/epubreader_PDF_006.png</screenshot>
-	<screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/photo_2017-03-15_17-22-00.jpg</screenshot>
-    <screenshot>https://raw.githubusercontent.com/e-alfred/epubreader/master/screenshots/photo_2017-03-15_17-22-02.jpg</screenshot>
+    <screenshot>https://github.com/e-alfred/epubreader/blob/master/screenshots/epubreader-1.png?raw=true</screenshot>
+    <screenshot>https://github.com/e-alfred/epubreader/blob/master/screenshots/epubreader-3.png?raw=true</screenshot>
+    <screenshot>https://github.com/e-alfred/epubreader/blob/master/screenshots/epubreader_PDF_005.png?raw=true</screenshot>
+    <screenshot>https://github.com/e-alfred/epubreader/blob/master/screenshots/epubreader_PDF_006.png?raw=true</screenshot>
+	<screenshot>https://github.com/e-alfred/epubreader/blob/master/screenshots/photo_2017-03-15_17-22-00.jpg?raw=true</screenshot>
+    <screenshot>https://github.com/e-alfred/epubreader/blob/master/screenshots/photo_2017-03-15_17-22-02.jpg?raw=true</screenshot>
     <category>files</category>
     <category>multimedia</category>
     <category>office</category>
     <dependencies>
-        <nextcloud min-version="15" max-version="19"/>
+        <nextcloud min-version="16" max-version="19"/>
     </dependencies>
 </info>
