@@ -16,7 +16,7 @@
 ### Added
  - PDF: (#73) new preference 'scroll to top of page on page turn'
  - PDF: defaults and per-document settings are now saved and restored
- - PDF: nightmode (using CSS3 filters, only works in recent browsers), toggle with 'd', by clicking nightmode button or clicking in empty area on button bar, adjust in settings
+ - PDF: night mode (using CSS3 filters, only works in recent browsers), toggle with 'd', by clicking night mode button or clicking in empty area on button bar, adjust in settings
 
 ### Changed
  - remove <base> from templates to avoid warning in console, <base> statement was ineffective anyway de to (overly restrictive) hardcoded policy in NC/OC.
