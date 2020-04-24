@@ -173,7 +173,7 @@
                                 <legend>night</legend>
                                 <div class="control-group">
                                     <div class="center-box nightshift">
-                                    <?php print ($l->t ('nightmode can be toggled by clicking the book title')); ?>;
+                                    <?php print ($l->t ('night mode can be toggled by clicking the book title')); ?>;
                                     </div>
                                     <div class="center-box">
                                     <input type="color" id="night_color" value="#454545">
