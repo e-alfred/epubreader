@@ -1,0 +1,28 @@
+OC.L10N.register(
+    "epubreader",
+    {
+    "Settings updated successfully." : "Οι ρυθμίσεις ενημερώθηκαν επιτυχώς.",
+    "EPUB/CBZ/PDF ebook reader" : "Αναγνώστης ηλ.βιβλίων EPUB/CBZ/PDF",
+    "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ" : "Ο αναγνώστης ebook βασιζόμενος στον περιηγητή, υποστηρίζει EPUB και CBR/CBZ",
+    "# Reader\nReader is an ebook reader based on pure javascript renderers. It works for publications formatted according to the following standards:\n\n - [Epub]\n - [PDF]\n - [CBR and CBZ] ('comics')\n\nFor Epub Reader uses the futurepress [epub.js] renderer to provide near-native looks, especially when used full-screen. Turn pages by pressing the left/right hand side of the screen/window or using the cursor keys (if you have those), use the sidebar to browse through chapters or bookmarks and add annotations.\n\nPDF is handled by Mozilla's [pdf.js] renderer in combination with a custom reader app to enable side-by-side display, batch search and more. Controls are like those used in the Epub renderer with a few exceptions, e.g. night mode has not been implemented yet.\n\nCBR and CBZ are supported using a custom renderer inspired by [balaclark]'s work. As with Epub, books can be navigated using the keyboard as well as mouse or touch navigation. Reader generates a visual index of all pages, show in the sidebar (thumbnail generation can be disabled for low-memory and/or -speed devices). As CBx files are often of varying quality, a set of image enhancement filters are provided.\n\nSee [README] for more exhaustive information on features and potential misfeatures of this app.\n\n   [epub.js]: https://github.com/futurepress/epub.js\n   [Epub]: http://idpf.org/epub\n   [CBR and CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n   [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n   [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n   [pdf.js]: https://github.com/mozilla/pdf.js\n   [README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md" : "# Αναγνώστης\nΟ Αναγνώστης είναι ένα πρόγραμμα ανάγνωσης ηλεκτρονικών βιβλίων που βασίζεται καθαρά σε javascript. Λειτουργεί για μορφές αρχείων σύμφωνα με τα ακόλουθα πρότυπα:\n\n - [Epub]\n - [PDF]\n - [CBR και CBZ] ('comics')\n\nΓια ανάγνωση Epub γίνετε χρήση του render futurepress [epub.js] για να παρέχει σχεδόν πραγματική εμφάνιση, ειδικά όταν χρησιμοποιείται σε πλήρη οθόνη. Γυρίστε σελίδες πατώντας την αριστερή / δεξιά πλευρά της οθόνης / παραθύρου ή χρησιμοποιώντας τα πλήκτρα βελάκια και την πλαϊνή γραμμή για να περιηγηθείτε σε κεφάλαια ή σελιδοδείκτες προσθέτοντας σχόλια.\n\nΗ διαχείριση του PDF γίνεται από τον [pdf.js] render του Mozilla σε συνδυασμό με μια προσαρμοσμένη εφαρμογή ανάγνωσης που επιτρέπει την προβολή δίπλα-δίπλα, την αναζήτηση και άλλα. Τα στοιχεία ελέγχου είναι παρόμοια με αυτά που χρησιμοποιούνται στο πρόγραμμα Epub με μερικές εξαιρέσεις, π.χ. η νυχτερινή λειτουργία δεν έχει εφαρμοστεί ακόμα.\n\nΤα CBR και CBZ υποστηρίζονται χρησιμοποιώντας ένα προσαρμοσμένο renderer εμπνευσμένο από το [balaclark]. Όπως και με το Epub, μπορείτε να πλοηγηθείτε στα βιβλία χρησιμοποιώντας το πληκτρολόγιο, καθώς και με ποντίκι ή αφής. Ο αναγνώστης δημιουργεί ένα οπτικό ευρετήριο όλων των σελίδων, εμφανίζεται στην πλαϊνή γραμμή (η δημιουργία μικρογραφιών μπορεί να απενεργοποιηθεί για συσκευές με χαμηλή μνήμη ή / και ταχύτητα). Καθώς τα αρχεία CBx είναι συχνά διαφορετικής ποιότητας, παρέχεται ένα σύνολο φίλτρων βελτίωσης εικόνας.\n\nΑνατρέξτε στο [README] για περισσότερες πληροφορίες και τις πιθανά σφάλματα της εφαρμογής\n\n   [epub.js]: https://github.com/futurepress/epub.js\n[Epub]: http://idpf.org/epub\n[CBR and CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n[balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n[PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n[pdf.js]: https://github.com/mozilla/pdf.js\n[README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md",
+    "custom font" : "Προσαρμοσμένη γραμματοσειρά",
+    "monospace" : "monospace",
+    "font size" : "Μέγεθος γραμματοσειράς",
+    "font weight" : "Πάχος γραμματοσειράς",
+    "Use custom colors" : "Χρήση προσαρμοσμένων χρωμάτων",
+    "night mode can be toggled by clicking the book title" : "Η νυχτερινή ανάγνωση ενεργοποιείται κάνοντας κλικ στον τίτλο",
+    "reflow text when sidebars are open" : "αναδιάταξη κειμένου όταν είναι ενεργή η πλευρική στήλη",
+    "disable extra-wide page turn areas" : "απενεργοποίηση της επιπλέον ευρείας σελίδας ",
+    "show page turn arrows" : "εμφάνιση του βέλους αλλαγής σελίδας",
+    "menu" : "μενού",
+    "Reader" : "Αναγνώστης",
+    "Select file types for which Reader should be the default viewer." : "Επιλέξτε τους τύπους αρχείων ως προεπιλογή για τον Αναγνώστη.",
+    "Epub" : "Epub",
+    "PDF" : "PDF",
+    "CBR/CBZ" : "CBR/CBZ",
+    " " : " ",
+    "endobj" : "endobj",
+    "startxref" : "startxref",
+    "%PDF-" : "%PDF-"
+},
+"nplurals=2; plural=(n != 1);");
