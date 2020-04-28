@@ -2,10 +2,26 @@ OC.L10N.register(
     "epubreader",
     {
     "Settings updated successfully." : "Ayarlar başarıyla güncellendi.",
+    "EPUB/CBZ/PDF ebook reader" : "EPUB/CBZ/PDF e-kitap okuyucusu",
+    "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ" : "Çoklu format tarayıcı tabanlı EPUB ve CBR/CBZ destekleyen e-kitap okuyucusu",
+    "custom font" : "özel font",
+    "monospace" : "monospace",
+    "font size" : "font büyüklüğü",
+    "font weight" : "font ağırlığı",
+    "Use custom colors" : "Özel renkleri kullan",
+    "night mode can be toggled by clicking the book title" : "kitap başlığına tıklayarak gece modu aç/kapa yapılabilinir",
+    "reflow text when sidebars are open" : "kenar çubuğu açıkken metni yeniden akıt",
+    "disable extra-wide page turn areas" : "ekstra geniş sayfa çevirme alanlarını devre dışı bırak",
+    "show page turn arrows" : "sayfa geçiş oklarını göster",
     "menu" : "menü",
     "Reader" : "Okuyucu",
+    "Select file types for which Reader should be the default viewer." : "Hangi Okuyucunun varsayılan olacağını belirlemek için dosya tipi seç.",
     "Epub" : "Epub",
     "PDF" : "PDF",
-    "CBR/CBZ" : "CBR/CBZ"
+    "CBR/CBZ" : "CBR/CBZ",
+    " " : " ",
+    "endobj" : "endobj",
+    "startxref" : "startxref",
+    "%PDF-" : "%PDF-"
 },
 "nplurals=2; plural=(n > 1);");
