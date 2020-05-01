@@ -18,6 +18,9 @@
     "Epub" : "Epub",
     "PDF" : "PDF",
     "CBR/CBZ" : "CBR/CBZ",
-    " " : " "
+    " " : " ",
+    "endobj" : "endobj",
+    "startxref" : "startxref",
+    "%PDF-" : "%PDF-"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

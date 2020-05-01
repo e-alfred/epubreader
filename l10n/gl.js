@@ -20,6 +20,9 @@ OC.L10N.register(
     "Epub" : "Epub",
     "PDF" : "PDF",
     "CBR/CBZ" : "CBR/CBZ",
-    " " : " "
+    " " : " ",
+    "endobj" : "endobj",
+    "startxref" : "startxref",
+    "%PDF-" : "%PDF-"
 },
 "nplurals=2; plural=(n != 1);");
