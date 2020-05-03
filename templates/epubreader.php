@@ -42,7 +42,6 @@
 		<link rel="stylesheet" href="<?php p($urlGenerator->linkTo('epubreader', 'vendor/epubjs/css/sidebar.css')) ?>?v=<?php p($version) ?>">
         <link rel="stylesheet" href="<?php p($urlGenerator->linkTo('epubreader', 'vendor/epubjs/css/popup.css')) ?>?v=<?php p($version) ?>">
 		<script type="text/javascript" nonce="<?php p($nonce) ?>" src="<?php p($urlGenerator->linkTo('epubreader', 'js/lib/typedarray.min.js')) ?>?v=<?php p($version) ?>"> </script>
-		<script type="text/javascript" nonce="<?php p($nonce) ?>" src="<?php p($urlGenerator->linkTo('epubreader', 'js/lib/Blob.js')) ?>?v=<?php p($version) ?>"> </script>
 		<script type="text/javascript" nonce="<?php p($nonce) ?>" src="<?php p($urlGenerator->linkTo('epubreader', 'js/lib/wgxpath.install.js')) ?>?v=<?php p($version) ?>"> </script>
 		<script type="text/javascript" nonce="<?php p($nonce) ?>" src="<?php p($urlGenerator->linkTo('epubreader', 'vendor/epubjs/libs/jquery.min.js')) ?>?v=<?php p($version) ?>"> </script>
 		<script type="text/javascript" nonce="<?php p($nonce) ?>" src="<?php p($urlGenerator->linkTo('epubreader', 'vendor/bartaz/jquery.highlight.js')) ?>?v=<?php p($version) ?>"> </script>
