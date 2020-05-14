@@ -14,7 +14,7 @@
   $annotations = $_['annotations'];
   $title = htmlentities(basename($downloadLink));
   $revision = '0130';
-  $version = \OCP\App::getAppVersion('epubreader') . '.' . $revision;
+  $version = \OC::$server->getAppManager()->getAppVersion('epubreader') . '.' . $revision;
 
   /* Mobile safari, the new IE6 */
   $idevice = (strstr($_SERVER['HTTP_USER_AGENT'],'iPhone')
