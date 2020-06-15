@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "Settings updated successfully." : "ההגדרות עודכנו בהצלחה",
     "EPUB/CBZ/PDF ebook reader" : "קורא ספרים אלקטרוניים מסוג EPUB/CBZ/PDF",
+    "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ" : "מציג ספרים אלקטרוניים מבוסס דפדפן שתומך במגוון סוגי קבצים כגון EPUB ו־CBR/CBZ",
     "custom font" : "גופן מותאם אישית",
     "monospace" : "רוחב אחיד",
     "font size" : "גודל גופן",
