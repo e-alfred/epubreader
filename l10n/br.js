@@ -1,0 +1,26 @@
+OC.L10N.register(
+    "epubreader",
+    {
+    "Settings updated successfully." : "Arvertoù adnevesaed mat.",
+    "EPUB/CBZ/PDF ebook reader" : "Lenner EPUB/CBZ/PDF ebook",
+    "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ" : "Al lenner ebook meur-stumm browser-diazeet, a lenn EPUB ha CBR/CBZ",
+    "custom font" : "foñs custom",
+    "monospace" : "monospace",
+    "font size" : "brazder ar foñs",
+    "font weight" : "poñerder ar foñs",
+    "Use custom colors" : "Implij ul liv all",
+    "night mode can be toggled by clicking the book title" : "mod noz a zo posuple lakaat/lemel en ur pouezhañ war title al levr",
+    "disable extra-wide page turn areas" : "disaotrea al lec'h treiñ pajenn evit ar pajennoù braz kennañ",
+    "show page turn arrows" : "diskwel ar bir evit cheñch pajenn",
+    "menu" : "rll-mezioù",
+    "Reader" : "Reader",
+    "Select file types for which Reader should be the default viewer." : "Choaz ar stumm restr ar Reader a rankfe implijout dre ziouer.",
+    "Epub" : "Epub",
+    "PDF" : "PDF",
+    "CBR/CBZ" : "CBR/CBZ",
+    " " : " ",
+    "endobj" : "endobj",
+    "startxref" : "startxref",
+    "%PDF-" : "%PDF-"
+},
+"nplurals=5; plural=((n%10 == 1) && (n%100 != 11) && (n%100 !=71) && (n%100 !=91) ? 0 :(n%10 == 2) && (n%100 != 12) && (n%100 !=72) && (n%100 !=92) ? 1 :(n%10 ==3 || n%10==4 || n%10==9) && (n%100 < 10 || n% 100 > 19) && (n%100 < 70 || n%100 > 79) && (n%100 < 90 || n%100 > 99) ? 2 :(n != 0 && n % 1000000 == 0) ? 3 : 4);");
