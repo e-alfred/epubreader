@@ -15,6 +15,7 @@ OC.L10N.register(
     "Select file types for which Reader should be the default viewer." : "Valitse tiedostotyypit, joihin Lukija asetetaan oletuskatselimeksi.",
     "Epub" : "Epub",
     "PDF" : "PDF",
-    "CBR/CBZ" : "CBR/CBZ"
+    "CBR/CBZ" : "CBR/CBZ",
+    "%PDF-" : "%PDF-"
 },
 "nplurals=2; plural=(n != 1);");
