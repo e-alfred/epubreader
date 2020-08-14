@@ -8,7 +8,7 @@ OC.L10N.register(
     "custom font" : "Benutzerdefinierter Font",
     "monospace" : "Nichtproportional",
     "font size" : "Schriftgröße",
-    "font weight" : "Schriftgröße",
+    "font weight" : "Schriftstärke",
     "Use custom colors" : "Benutzerdefinierte Farbe benutzen",
     "night mode can be toggled by clicking the book title" : "Der Nachtmodus kann durch das Klicken auf den Buchtitel umgeschaltet werden",
     "reflow text when sidebars are open" : "Text neu umfließen lassen, wenn Seitenleisten geöffnet sind",
