@@ -18,9 +18,6 @@ OC.L10N.register(
     "Select file types for which Reader should be the default viewer." : "Veldu þær skráategundir sem Reader ætti að vera sjálfgefinn skoðari fyrir.",
     "Epub" : "Epub",
     "PDF" : "PDF",
-    "CBR/CBZ" : "CBR/CBZ",
-    "endobj" : "endobj",
-    "startxref" : "startxref",
-    "%PDF-" : "%PDF-"
+    "CBR/CBZ" : "CBR/CBZ"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");

@@ -13,7 +13,6 @@
     "Select file types for which Reader should be the default viewer." : "Valitse tiedostotyypit, joihin Lukija asetetaan oletuskatselimeksi.",
     "Epub" : "Epub",
     "PDF" : "PDF",
-    "CBR/CBZ" : "CBR/CBZ",
-    "%PDF-" : "%PDF-"
+    "CBR/CBZ" : "CBR/CBZ"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

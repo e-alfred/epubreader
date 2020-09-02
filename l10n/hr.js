@@ -19,9 +19,6 @@ OC.L10N.register(
     "Select file types for which Reader should be the default viewer." : "Odaberite vrste datoteka za koje će Reader biti zadani preglednik.",
     "Epub" : "Epub",
     "PDF" : "PDF",
-    "CBR/CBZ" : "CBR/CBZ",
-    "endobj" : "endobj",
-    "startxref" : "startxref",
-    "%PDF-" : "%PDF-"
+    "CBR/CBZ" : "CBR/CBZ"
 },
 "nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;");
