@@ -84,8 +84,8 @@ class Version010402Date20200508180941 extends SimpleMigrationStep {
 			$table->addIndex(['name'], 'reader_bookmarks_name_index');
 		}
 
-		if (!$schema->hasTable('reader_preferences')) {
-			$table = $schema->createTable('reader_preferences');
+		if (!$schema->hasTable('reader_prefs')) {
+			$table = $schema->createTable('reader_prefs');
 			$table->addColumn('id', 'bigint', [
 				'autoincrement' => true,
 				'notnull' => true,
@@ -126,9 +126,9 @@ class Version010402Date20200508180941 extends SimpleMigrationStep {
 				'unsigned' => true,
 			]);
 			$table->setPrimaryKey(['id']);
-			$table->addIndex(['file_id'], 'reader_preferences_file_id_index');
-			$table->addIndex(['user_id'], 'reader_preferences_user_id_index');
-			$table->addIndex(['scope'], 'reader_preferences_scope_index');
+			$table->addIndex(['file_id'], 'reader_prefs_file_id_index');
+			$table->addIndex(['user_id'], 'reader_prefs_user_id_index');
+			$table->addIndex(['scope'], 'reader_prefs_scope_index');
 		}
 		return $schema;
 	}

@@ -16,7 +16,7 @@ use OCP\IDBConnection;
 class PreferenceMapper extends ReaderMapper {
 
     public function __construct(IDBConnection $db, $UserId, Time $time) {
-        parent::__construct($db, 'reader_preferences', Preference::class, $time);
+        parent::__construct($db, 'reader_prefs', Preference::class, $time);
         $this->userId = $UserId;
     }
 
@@ -30,14 +30,14 @@ class PreferenceMapper extends ReaderMapper {
      */
     public function get($scope, $fileId, $name=null) {
         if(!empty($name)) {
-            $sql = "SELECT * FROM `*PREFIX*reader_preferences` WHERE `scope`=? AND `file_id`=? AND `user_id`=? AND `name`=?";
+            $sql = "SELECT * FROM `*PREFIX*reader_prefs` WHERE `scope`=? AND `file_id`=? AND `user_id`=? AND `name`=?";
             $args = array(
                 $scope,
                 $fileId,
                 $this->userId,
                 $name);
         } else {
-            $sql = "SELECT * FROM `*PREFIX*reader_preferences` WHERE `scope`=? AND `file_id`=? AND `user_id`=?";
+            $sql = "SELECT * FROM `*PREFIX*reader_prefs` WHERE `scope`=? AND `file_id`=? AND `user_id`=?";
             $args = array(
                 $scope,
                 $fileId,
@@ -83,7 +83,7 @@ class PreferenceMapper extends ReaderMapper {
 
     /* currently not used*/
     public function deleteForFileId($fileId) {
-        $sql = "SELECT * FROM `*PREFIX*reader_preferences` WHERE file_id=?";
+        $sql = "SELECT * FROM `*PREFIX*reader_prefs` WHERE file_id=?";
         $args = [ $fileId ];
         array_map(
             function($entity) {
@@ -94,7 +94,7 @@ class PreferenceMapper extends ReaderMapper {
 
     /* currently not used*/
     public function deleteForUserId($userId) {
-        $sql = "SELECT * FROM `*PREFIX*reader_preferences` WHERE user_id=?";
+        $sql = "SELECT * FROM `*PREFIX*reader_prefs` WHERE user_id=?";
         $args = [ $userId ];
         array_map(
             function($entity) {
