@@ -30,7 +30,7 @@ See [README] for more exhaustive information on features and potential misfeatur
 	]]>
     </description>
     <version>1.4.4</version>
-    <licence>apgl</licence>
+    <licence>agpl</licence>
     <author>Frank de Lange</author>
     <author>e-alfred</author>
     <documentation>https://github.com/e-alfred/epubreader</documentation>
