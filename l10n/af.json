@@ -1,0 +1,8 @@
+{ "translations": {
+    "menu" : "kieslys",
+    "Reader" : "Leser",
+    "Epub" : "Epub",
+    "PDF" : "PDF",
+    "CBR/CBZ" : "CBR/CBZ"
+},"pluralForm" :"nplurals=2; plural=(n != 1);"
+}
