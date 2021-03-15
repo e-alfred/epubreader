@@ -8,7 +8,7 @@ OC.L10N.register(
     "custom font" : "自訂字型",
     "monospace" : "等寬",
     "font size" : "字型大小",
-    "font weight" : "字型粗細",
+    "font weight" : "字型粗幼",
     "Use custom colors" : "使用自訂色彩",
     "night mode can be toggled by clicking the book title" : "點選書本標題可切換夜間模式",
     "reflow text when sidebars are open" : "側邊欄開啟時重新排列文字",
