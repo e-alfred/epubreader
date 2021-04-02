@@ -143,7 +143,7 @@
 OC.Plugins.register('OCA.Files.FileList', OCA.Epubreader.Plugin);
 
 // FIXME: Hack for single public file view since it is not attached to the fileslist
-$(document).ready(function(){
+window.addEventListener('DOMContentLoaded', function () {
     if ($('#isPublic').val()
         && ($('#mimetype').val() === 'application/epub+zip'
             || $('#mimetype').val() === 'application/pdf'

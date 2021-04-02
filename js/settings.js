@@ -1,4 +1,4 @@
-$(document).ready(function(){
+window.addEventListener('DOMContentLoaded', function () {
     // save settings
     var readerSettings = {
         save : function() {

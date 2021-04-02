@@ -1,4 +1,4 @@
-$(document).ready(function(){
+window.addEventListener('DOMContentLoaded', function () {
     // save settings
     var readerSettings = {
         save : function() {
@@ -19,4 +19,3 @@ $(document).ready(function(){
     $('#PdfEnable').on("change", readerSettings.save);
     $('#CbxEnable').on("change", readerSettings.save);
 });
-
