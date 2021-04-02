@@ -39,7 +39,6 @@ class Hooks {
         $isJson = self::isJson($settings['array']['oc_appconfig']);
         $array = ($isJson) ? json_decode($settings['array']['oc_appconfig'], true) : $settings['array']['oc_appconfig'];
         $array['filesReader']['enableEpub'] = Config::get('epub_enable', 'true');
-        $array['filesReader']['enablePdf'] = Config::get('pdf_enable', 'true');
         $array['filesReader']['enableCbx'] = Config::get('cbx_enable', 'true');
         $settings['array']['oc_appconfig'] = ($isJson) ? json_encode($array) : $array;
     }
@@ -50,7 +49,7 @@ class Hooks {
         $queryBuilder->execute();
 
         $queryBuilder = $connection->getQueryBuilder();
-        $queryBuilder->delete('reader_prefs')->where('file_id = :file_id')->setParameter(':file_id', $fileId); 
+        $queryBuilder->delete('reader_prefs')->where('file_id = :file_id')->setParameter(':file_id', $fileId);
         $queryBuilder->execute();
     }
 
@@ -60,7 +59,7 @@ class Hooks {
         $queryBuilder->execute();
 
         $queryBuilder = $connection->getQueryBuilder();
-        $queryBuilder->delete('reader_prefs')->where('user_id = :user_id')->setParameter(':user_id', $userId); 
+        $queryBuilder->delete('reader_prefs')->where('user_id = :user_id')->setParameter(':user_id', $userId);
         $queryBuilder->execute();
     }
 

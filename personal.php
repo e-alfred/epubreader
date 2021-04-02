@@ -16,10 +16,8 @@ use OCP\Util;
 
 $tmpl = new \OCP\Template('epubreader', 'settings-personal');
 $EpubEnable = Config::get('epub_enable', 'true');
-$PdfEnable = Config::get('pdf_enable', 'true');
 $CbxEnable = Config::get('cbx_enable', 'true');
 $tmpl->assign('EpubEnable', $EpubEnable);
-$tmpl->assign('PdfEnable', $PdfEnable);
 $tmpl->assign('CbxEnable', $CbxEnable);
 
 return $tmpl->fetchPage();

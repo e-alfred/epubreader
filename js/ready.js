@@ -1,4 +1,4 @@
-document.onreadystatechange = function () {  
+document.onreadystatechange = function () {
 
     if (document.readyState == "complete") {
 
@@ -78,7 +78,7 @@ document.onreadystatechange = function () {
             return $.get(options.session.basePath + "bookmark/cursor/" + options.session.fileId);
         };
         options.session.setCursor = function(value) {
-            return $.post(options.session.basePath + "bookmark/cursor", 
+            return $.post(options.session.basePath + "bookmark/cursor",
                 {
                     "fileId": options.session.fileId,
                     "value": JSON.stringify(value)
@@ -96,15 +96,12 @@ document.onreadystatechange = function () {
             case 'application/x-cbr':
                 renderCbr(file, options);
                 break;
-            case 'application/pdf':
-                renderPdf(file, options);
-                break;
             default:
                 console.log(type + ' is not supported by Reader');
         }
     }
 
-    // why is there no standard library function for this? 
+    // why is there no standard library function for this?
     function getUrlParameter (param) {
         var pattern = new RegExp('[?&]'+param+'((=([^&]*))|(?=(&|$)))','i');
         var m = window.location.search.match(pattern);
@@ -114,7 +111,7 @@ document.onreadystatechange = function () {
     // start epub.js renderer
     function renderEpub(file, options) {
 
-        // some parameters... 
+        // some parameters...
         EPUBJS.filePath = "vendor/epubjs/";
         EPUBJS.cssPath = "vendor/epubjs/css/";
         EPUBJS.basePath = $('.session').data('basepath');
@@ -141,14 +138,4 @@ document.onreadystatechange = function () {
         var reader = cbReader(file, options);
     }
 
-    // start pdf.js renderer
-    function renderPdf(file, options) {
-        PDFJS.filePath = "vendor/pdfjs/";
-        PDFJS.imageResourcesPath = "vendor/pdfjs/css/images/";
-        PDFJS.workerSrc = options.session.basePath + 'vendor/pdfjs/lib/pdf.worker.js';
-
-        var reader = pdfReader(file, options);
-    }
-
 };
-

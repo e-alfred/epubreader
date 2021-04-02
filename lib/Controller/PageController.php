@@ -76,8 +76,7 @@ class PageController extends Controller {
     public function showReader() {
         $templates= [
             'application/epub+zip' => 'epubreader',
-            'application/x-cbr' => 'cbreader',
-            'application/pdf' => 'pdfreader'
+            'application/x-cbr' => 'cbreader'
         ];
 
         /**
@@ -133,7 +132,7 @@ class PageController extends Controller {
      * @param string $path path-fragment from url
      * @return array
      * @throws NotFoundException
-     */ 
+     */
     private function getFileInfo($path) {
         $count = 0;
         $shareToken = preg_replace("/(?:\/index\.php)?\/s\/([A-Za-z0-9]{15,32})\/download.*/", "$1", $path, 1,$count);
@@ -153,7 +152,7 @@ class PageController extends Controller {
                 } else {
                     throw new NotFoundException('Shared file path or name not set');
                 }
-            } 
+            }
             $filePath = $node->getPath();
             $fileId = $node->getId();
         } else {

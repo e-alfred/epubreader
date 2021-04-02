@@ -117,24 +117,10 @@
 					}
 				});
 
-				if (oc_appconfig.filesReader.enableCbx === 'true')
-					fileActions.setDefault(mime, 'view-cbr-' + i);
+			fileActions.setDefault(mime, 'view-cbr-' + i);
 			});
 
-			fileActions.registerAction({
-				name: 'view-pdf',
-				displayName: 'View',
-				mime: 'application/pdf',
-				permissions: OC.PERMISSION_READ,
-				actionHandler: function(fileName, context) {
-					return actionHandler(fileName, 'application/pdf', context);
-				}
-			});
-
-            if (oc_appconfig.filesReader.enableEpub === 'true')
-                fileActions.setDefault('application/epub+zip', 'view-epub');
-            if (oc_appconfig.filesReader.enablePdf === 'true')
-                fileActions.setDefault('application/pdf', 'view-pdf');
+      fileActions.setDefault('application/epub+zip', 'view-epub');
 		}
 	};
 
