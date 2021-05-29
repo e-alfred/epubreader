@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Settings updated successfully." : "設定の更新に成功しました。",
     "EPUB/CBZ/PDF ebook reader" : "EPUB/CBZ/PDF eブックリーダー",
-    "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ" : "フォーマットブラウザを用いたeブックリーダー、EPUBおよびCBR/CBZをサポート",
+    "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ" : "フォーマットブラウザーを用いたeブックリーダー、EPUBおよびCBR/CBZをサポート",
     "custom font" : "カスタムフォント",
     "monospace" : "monospace",
     "font size" : "フォントサイズ",
