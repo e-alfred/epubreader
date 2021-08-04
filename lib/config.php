@@ -25,7 +25,7 @@ class Config
 	 * @return string retrieved value or default
 	 */
 	public static function get($key, $default) {
-		return \OC::$server->getConfig()->getUserValue(\OCP\User::getUser(), 'epubreader', $key, $default);
+		return \OC::$server->getConfig()->getUserValue(\OC_User::getUser(), 'epubreader', $key, $default);
 	}
 
 	/**
@@ -36,7 +36,7 @@ class Config
 	 * @return bool success
 	 */
 	public static function set($key, $value) {
-		return \OC::$server->getConfig()->setUserValue(\OCP\User::getUser(), 'epubreader', $key, $value);
+		return \OC::$server->getConfig()->setUserValue(\OC_User::getUser(), 'epubreader', $key, $value);
 	}
 
 	/**
