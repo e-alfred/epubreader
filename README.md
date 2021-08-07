@@ -5,7 +5,7 @@ Reader is an ebook reader based on pure javascript renderers. It works for publi
 
  - [Epub]
  - [PDF]
- - [CBR and CBZ] ('comics')
+ - [CBR and CBZ] ("comics")
 
 For Epub Reader uses the futurepress [epub.js] renderer to provide near-native looks, especially when used full-screen. Turn pages by pressing the left/right hand side of the screen/window or using the cursor keys (if you have those), use the sidebar to browse through chapters or bookmarks and add annotations.
 
