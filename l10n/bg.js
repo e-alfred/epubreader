@@ -1,6 +1,24 @@
 OC.L10N.register(
     "epubreader",
     {
-    "menu" : "Меню"
+    "Settings updated successfully." : "Успешно актуализиране на настройките.",
+    "EPUB/CBZ/PDF ebook reader" : "EPUB/CBZ/PDF четец на електронни книги",
+    "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ" : "Многоформатен четец на електронни книги, базиран на браузър, поддържа EPUB и CBR/CBZ",
+    "# Reader\nReader is an ebook reader based on pure javascript renderers. It works for publications formatted according to the following standards:\n\n - [Epub]\n - [PDF]\n - [CBR and CBZ] ('comics')\n\nFor Epub Reader uses the futurepress [epub.js] renderer to provide near-native looks, especially when used full-screen. Turn pages by pressing the left/right hand side of the screen/window or using the cursor keys (if you have those), use the sidebar to browse through chapters or bookmarks and add annotations.\n\nPDF is handled by Mozilla's [pdf.js] renderer in combination with a custom reader app to enable side-by-side display, batch search and more. Controls are like those used in the Epub renderer with a few exceptions, e.g. night mode has not been implemented yet.\n\nCBR and CBZ are supported using a custom renderer inspired by [balaclark]'s work. As with Epub, books can be navigated using the keyboard as well as mouse or touch navigation. Reader generates a visual index of all pages, show in the sidebar (thumbnail generation can be disabled for low-memory and/or -speed devices). As CBx files are often of varying quality, a set of image enhancement filters are provided.\n\nSee [README] for more exhaustive information on features and potential misfeatures of this app.\n\n   [epub.js]: https://github.com/futurepress/epub.js\n   [Epub]: http://idpf.org/epub\n   [CBR and CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n   [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n   [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n   [pdf.js]: https://github.com/mozilla/pdf.js\n   [README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md" : "# Reader/Четец/\n е четец на електронни книги, базиран на чисти javascript визуализатори. Работи за публикации, форматирани в съответствие със следните стандарти:\n\n - [Epub]\n - [PDF]\n - [CBR и CBZ] („комикси“)\n\nЗа Epub, Reader използва futurepress [epub.js] рендер, за да осигури почти естествен вид, особено когато се използва на цял екран. Прелиствайте страници, като натискате лявата/дясната страна на екрана/прозореца или използвате клавишите с курсора (ако имате такива), използвайте страничната лента, за да преглеждате глави или отметки и да добавяте пояснения.\n\nPDF се обработва от рендера [pdf.js] на Mozilla, в комбинация с персонализирано приложение за четене, за да се даде възможност за успоредно показване, групово търсене и други. Контролите са като тези, използвани в рендера на Epub с няколко изключения, напр. все още не е внедрен нощен режим.\n\nCBR и CBZ се поддържат с помощта на персонализиран рендер, вдъхновен от работата на [balaclark]. Както при Epub, книгите могат да се навигират с помощта на клавиатурата, както и с мишка или с докосване. Reader генерира визуален индекс на всички страници, показван в страничната лента (генерирането на миниатюри може да бъде деактивирано за устройства с ниска памет и/или скорост). Тъй като CBx файловете често са с различно качество, се предоставя набор от филтри за подобряване на изображението.\n\nВижте [README] за по-изчерпателна информация относно функциите и потенциалните грешки на това приложение.\n\n   [epub.js]: https://github.com/futurepress/epub.js\n   [Epub]: http://idpf.org/epub\n   [CBR and CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n   [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n   [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n   [pdf.js]: https://github.com/mozilla/pdf.js\n   [README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md",
+    "custom font" : "персонализиран шрифт",
+    "monospace" : "монопространствен",
+    "font size" : "размер на шрифта",
+    "font weight" : "тегло на шрифта",
+    "Use custom colors" : "Използване на персонализирани цветове",
+    "night mode can be toggled by clicking the book title" : "нощният режим може да бъде превключен чрез щракване върху заглавието на книгата",
+    "reflow text when sidebars are open" : "преоформяне на текст, когато страничните ленти са отворени",
+    "disable extra-wide page turn areas" : "деактивиране на особено широки зони за обръщане на страници",
+    "show page turn arrows" : "показване на стрелките за завъртане на страницата",
+    "menu" : "Меню",
+    "Reader" : "Reader/четец/",
+    "Select file types for which Reader should be the default viewer." : "Избор на типове файлове, за които Reader/четец/ трябва да бъде инструментът за преглед по подразбиране.",
+    "Epub" : "Epub",
+    "PDF" : "PDF",
+    "CBR/CBZ" : "CBR/CBZ"
 },
 "nplurals=2; plural=(n != 1);");
