@@ -7,6 +7,7 @@
     "font weight" : "fontin paino",
     "Use custom colors" : "Käytä mukautettuja värejä",
     "night mode can be toggled by clicking the book title" : "yötilan voi ottaa käyttöön tai poistaa käytöstä napsauttamalla kirjan otsikkoa",
+    "reflow text when sidebars are open" : "rivitä teksti uudelleen kun sivupalkit ovat avoinna",
     "show page turn arrows" : "näytä nuolet sivun kääntämiseksi",
     "menu" : "Valikko",
     "Reader" : "Lukija",
