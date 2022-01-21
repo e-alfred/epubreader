@@ -10,7 +10,7 @@
  * later.
  */
 
-$this->create('reader_personal_settings', 'ajax/personal.php')->actionInclude('epubreader/ajax/personal.php');
+//$this->create('reader_personal_settings', 'ajax/personal.php')->actionInclude('epubreader/ajax/personal.php');
 
 return ['routes' => [
     // Page
@@ -36,5 +36,6 @@ return ['routes' => [
     ['name' => 'preference#get', 'url' => '/preference/{fileId}/{scope}/{name}', 'verb' => 'GET', 'defaults' => ['name' => '']],
     ['name' => 'preference#set', 'url' => '/preference', 'verb' => 'POST'],
     ['name' => 'preference#delete', 'url' => '/preference/{fileId}/{scope}/{name}', 'verb' => 'DELETE'],
+	['name' => 'settings#setPreference', 'url' => '/ajax/personal.php', 'verb' => 'POST'],
 ]];
 
