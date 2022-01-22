@@ -17,6 +17,7 @@ use OCP\AppFramework\Http;
 use OCP\AppFramework\Controller;
 use OCA\Epubreader\Service\PreferenceService;
 use OCA\Epubreader\Config;
+use OCP\AppFramework\Http\JSONResponse;
 
 class SettingsController extends Controller {
 	
@@ -40,35 +41,29 @@ class SettingsController extends Controller {
     }
 	
 	/**
-     * @brief return preference for $fileId
+     * @brief set preference for file type association
      *
      * @NoAdminRequired
-     * @NoCSRFRequired
      *
-     * @param string $scope
-     * @param int $fileId
-     * @param string $name if null, return all preferences for $scope + $fileId 
+     * @param int $EpubEnable
+     * @param int $EpubEnable
+     * @param int $CbxEnable
      *
 	 * @return array|\OCP\AppFramework\Http\JSONResponse
 	 */
-    public function setPreference($scope, $fileId, $name) {
-		/*\OC_JSON::callCheck();
-		\OC_JSON::checkLoggedIn();*/
+    public function setPreference($EpubEnable, $PdfEnable, $CbxEnable) {
 
 		$l = \OC::$server->getL10N('epubreader');
-
-		$EpubEnable = isset($_POST['EpubEnable']) ? $_POST['EpubEnable'] : 'false';
-		$PdfEnable = isset($_POST['PdfEnable']) ? $_POST['PdfEnable'] : 'false';
-		$CbxEnable = isset($_POST['CbxEnable']) ? $_POST['CbxEnable'] : 'false';
 
 		Config::set('epub_enable', $EpubEnable);
 		Config::set('pdf_enable', $PdfEnable);
 		Config::set('cbx_enable', $CbxEnable);
 
-		\OC_JSON::success(
-			array(
-				'data' => array('message'=> $l->t('Settings updated successfully.'))
-			)
-		);
+		$response = array(
+				'data' => array('message'=> $l->t('Settings updated successfully.')),
+				'status' => 'success'
+				);
+
+		return new JSONResponse($response);
 	}
 }

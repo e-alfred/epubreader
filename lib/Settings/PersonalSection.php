@@ -65,6 +65,6 @@ class PersonalSection implements IIconSection
      */
     public function getPriority()
     {
-        return 100;
+        return 20;
     }
 }
