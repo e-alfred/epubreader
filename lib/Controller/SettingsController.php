@@ -51,7 +51,7 @@ class SettingsController extends Controller {
      *
 	 * @return array|\OCP\AppFramework\Http\JSONResponse
 	 */
-    public function setPreference($EpubEnable, $PdfEnable, $CbxEnable) {
+    public function setPreference(string $EpubEnable, string $PdfEnable, string $CbxEnable) {
 
 		$l = \OC::$server->getL10N('epubreader');
 
