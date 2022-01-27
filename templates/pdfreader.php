@@ -43,6 +43,7 @@
         <link rel="stylesheet" href="<?php p($urlGenerator->linkTo('epubreader', 'vendor/pdfjs/css/text_layer_builder.css')) ?>?v=<?php p($version) ?>">
         <link rel="stylesheet" href="<?php p($urlGenerator->linkTo('epubreader', 'vendor/pdfjs/css/annotation_layer_builder.css')) ?>?v=<?php p($version) ?>">
         <script type="text/javascript" nonce="<?php p($nonce) ?>" src="<?php p($urlGenerator->linkTo('epubreader', 'vendor/epubjs/libs/jquery.min.js')) ?>?v=<?php p($version) ?>"> </script>
+		<script type="text/javascript" nonce="<?php p($nonce) ?>" src="<?php p($urlGenerator->linkTo('epubreader', 'vendor/pdfjs/lib/pdf.worker.js')) ?>?v=<?php p($version) ?>"> </script>
         <script type="text/javascript" nonce="<?php p($nonce) ?>" src="<?php p($urlGenerator->linkTo('epubreader', 'vendor/bartaz/jquery.highlight.js')) ?>?v=<?php p($version) ?>"> </script>
         <script type="text/javascript" nonce="<?php p($nonce) ?>" src="<?php p($urlGenerator->linkTo('epubreader', 'vendor/jquery/put-delete.js')) ?>?v=<?php p($version) ?>"> </script>
         <script type="text/javascript" nonce="<?php p($nonce) ?>" src="<?php p($urlGenerator->linkTo('epubreader', 'vendor/sindresorhus/screenfull.js')) ?>?v=<?php p($version) ?>"> </script>

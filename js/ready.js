@@ -145,7 +145,8 @@ document.onreadystatechange = function () {
     function renderPdf(file, options) {
         PDFJS.filePath = "vendor/pdfjs/";
         PDFJS.imageResourcesPath = "vendor/pdfjs/css/images/";
-        PDFJS.workerSrc = options.session.basePath + 'vendor/pdfjs/lib/pdf.worker.js';
+        // This file is loaded using the HTML template instead
+		// PDFJS.workerSrc = options.session.basePath + 'vendor/pdfjs/lib/pdf.worker.js';
 
         var reader = pdfReader(file, options);
     }
