@@ -10,6 +10,7 @@
 
 namespace OCA\Epubreader\Db;
 
+use OCP\DB\QueryBuilder\IQueryBuilder;
 use OCA\Epubreader\Utility\Time;
 use OCP\IDBConnection;
 
@@ -29,22 +30,18 @@ class PreferenceMapper extends ReaderMapper {
      * @return array
      */
     public function get($scope, $fileId, $name=null) {
-        if(!empty($name)) {
-            $sql = "SELECT * FROM `*PREFIX*reader_prefs` WHERE `scope`=? AND `file_id`=? AND `user_id`=? AND `name`=?";
-            $args = array(
-                $scope,
-                $fileId,
-                $this->userId,
-                $name);
-        } else {
-            $sql = "SELECT * FROM `*PREFIX*reader_prefs` WHERE `scope`=? AND `file_id`=? AND `user_id`=?";
-            $args = array(
-                $scope,
-                $fileId,
-                $this->userId);
+        $query = $this->db->getQueryBuilder();
+        $query->select('*')
+            ->from($this->getTableName())
+            ->where($query->expr()->eq('scope', $query->createNamedParameter($scope)))
+            ->andWhere($query->expr()->eq('file_id', $query->createNamedParameter($fileId)))
+            ->andWhere($query->expr()->eq('user_id', $query->createNamedParameter($this->userId)));
+
+        if (!empty($name)) {
+            $query->andWhere($query->expr()->eq('name', $query->createNamedParameter($name)));						   
         }
 
-        return $this->findEntities($sql, $args);
+        return $this->findEntities($query); 
     }
 
     /**

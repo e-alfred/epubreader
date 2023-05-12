@@ -11,12 +11,12 @@
 namespace OCA\Epubreader\Db;
 
 use OCP\IDBConnection;
-use OCP\AppFramework\Db\Mapper;
+use OCP\AppFramework\Db\QBMapper;
 use OCP\AppFramework\Db\Entity;
 
 use OCA\Epubreader\Utility\Time;
 
-abstract class ReaderMapper extends Mapper {
+abstract class ReaderMapper extends QBMapper {
 
     /**
      * @var Time
@@ -28,12 +28,12 @@ abstract class ReaderMapper extends Mapper {
         $this->time = $time;
     }
 
-    public function update(Entity $entity) {
+    public function update(Entity $entity): Entity {
         $entity->setLastModified($this->time->getMicroTime());
         return parent::update($entity);
     }
 
-    public function insert(Entity $entity) {
+    public function insert(Entity $entity): Entity {
         $entity->setLastModified($this->time->getMicroTime());
         return parent::insert($entity);
     }
