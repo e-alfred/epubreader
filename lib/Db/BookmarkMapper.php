@@ -39,20 +39,20 @@ class BookmarkMapper extends ReaderMapper {
     public function get($fileId, $name, $type = null) {
     	$query = $this->db->getQueryBuilder();
     	$query->select('*')
-        	->from($this->getTableName())
-        	->where($query->expr()->eq('file_id', $query->createNamedParameter($fileId)))
-        	->andWhere($query->expr()->eq('user_id', $query->createNamedParameter($this->userId)));
+            ->from($this->getTableName())
+            ->where($query->expr()->eq('file_id', $query->createNamedParameter($fileId)))
+            ->andWhere($query->expr()->eq('user_id', $query->createNamedParameter($this->userId)));
 
     	if ($type !== null) {
-        	$query->andWhere($query->expr()->eq('type', $query->createNamedParameter($type)));
+            $query->andWhere($query->expr()->eq('type', $query->createNamedParameter($type)));
     	}
 
     	if ($name !== null) {
-       		$query->andWhere($query->expr()->eq('name', $query->createNamedParameter($name)));
+       	    $query->andWhere($query->expr()->eq('name', $query->createNamedParameter($name)));
     	}
 
     	return $this->findEntities($query);
-	}
+    }
 
     /**
      * @brief write bookmark to database
