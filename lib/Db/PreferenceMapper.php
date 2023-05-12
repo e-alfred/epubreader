@@ -38,11 +38,7 @@ class PreferenceMapper extends ReaderMapper {
             ->andWhere($query->expr()->eq('user_id', $query->createNamedParameter($this->userId)));
 
         if (!empty($name)) {
-            $query->andWhere($query->expr()->eq('name', $query->createNamedParameter($name)));
-						  
-					   
-						
-							   
+            $query->andWhere($query->expr()->eq('name', $query->createNamedParameter($name)));						   
         }
 
         return $this->findEntities($query); 
