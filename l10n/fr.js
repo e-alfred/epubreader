@@ -17,7 +17,7 @@ OC.L10N.register(
     "menu" : "menu",
     "Reader" : "Lecteur",
     "Select file types for which Reader should be the default viewer." : "Sélectionnez les types de fichier pour lesquels Reader devrait être le lecteur par défaut.",
-    "Epub" : "Epub",
+    "Epub" : "EPUB",
     "PDF" : "PDF",
     "CBR/CBZ" : "CBR/CBZ"
 },
