@@ -11,7 +11,7 @@ OC.L10N.register(
     "font weight" : "ثخانة الخط",
     "Use custom colors" : "إستخدم ألواناً مُخصّصة",
     "night mode can be toggled by clicking the book title" : "يمكن التبديل من/إلى الوضع الليلي بضغط عنوان الكتاب",
-    "reflow text when sidebars are open" : "أعد تدفق النصّ عندما تكون الأشرطة الجانبية مفتوحة",
+    "reflow text when sidebars are open" : "أعِد دفق النصّ عندما تكون الأشرطة الجانبية مفتوحة",
     "disable extra-wide page turn areas" : "تعطيل مناطق تقليب الصفحات العريضة للغاية",
     "show page turn arrows" : "أعرض أسهم تقليب الصفحات",
     "menu" : "القائمة ",
