@@ -1,6 +1,24 @@
 OC.L10N.register(
     "epubreader",
     {
-    "menu" : "roghchlár"
+    "Settings updated successfully." : "D'éirigh leis na socruithe a nuashonrú.",
+    "EPUB/CBZ/PDF ebook reader" : "Léitheoir ebook EPUB/CBZ/PDF",
+    "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ" : "Léitheoir ríomhleabhair ilfhormáideach brabhsálaí-bhunaithe a thacaíonn le EPUB agus CBR/CBZ",
+    "# Reader\nReader is an ebook reader based on pure javascript renderers. It works for publications formatted according to the following standards:\n\n - [Epub]\n - [PDF]\n - [CBR and CBZ] ('comics')\n\nFor Epub Reader uses the futurepress [epub.js] renderer to provide near-native looks, especially when used full-screen. Turn pages by pressing the left/right hand side of the screen/window or using the cursor keys (if you have those), use the sidebar to browse through chapters or bookmarks and add annotations.\n\nPDF is handled by Mozilla's [pdf.js] renderer in combination with a custom reader app to enable side-by-side display, batch search and more. Controls are like those used in the Epub renderer with a few exceptions, e.g. night mode has not been implemented yet.\n\nCBR and CBZ are supported using a custom renderer inspired by [balaclark]'s work. As with Epub, books can be navigated using the keyboard as well as mouse or touch navigation. Reader generates a visual index of all pages, show in the sidebar (thumbnail generation can be disabled for low-memory and/or -speed devices). As CBx files are often of varying quality, a set of image enhancement filters are provided.\n\nSee [README] for more exhaustive information on features and potential misfeatures of this app.\n\n   [epub.js]: https://github.com/futurepress/epub.js\n   [Epub]: http://idpf.org/epub\n   [CBR and CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n   [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n   [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n   [pdf.js]: https://github.com/mozilla/pdf.js\n   [README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md" : "# Léitheoir\nIs léitheoir ríomhleabhair é Reader atá bunaithe ar rindreálaithe javascript íon. Oibríonn sé d’fhoilseacháin atá formáidithe de réir na gcaighdeán seo a leanas:\n\n- [Epub]\n- [PDF]\n- [CBR agus CBZ] ('comics')\n\nDo Epub Reader úsáideann an rindreálaí futurepress [epub.js] chun cuma dhúchasach a sholáthar, go háirithe nuair a úsáidtear é ar scáileán iomlán. Cas na leathanaigh trí bhrú ar thaobh na láimhe clé/deis den scáileán/fuinneog nó úsáid na heochracha cúrsóra (má tá iad sin agat), bain úsáid as an mbarra taoibh chun brabhsáil trí chaibidlí nó leabharmharcanna agus cuir nótaí leis.\n\nLáimhseálann rindreálaí Mozilla [pdf.js] PDF i gcomhar le haip léitheora saincheaptha chun taispeáint taobh le taobh, cuardach baisc agus go leor eile a chumasú. Tá rialuithe cosúil leis na cinn a úsáidtear sa rindreálaí Epub le roinnt eisceachtaí, e.g. níl modh oíche curtha i bhfeidhm fós.\n\nTacaítear le CBR agus CBZ trí úsáid a bhaint as rindreálaí saincheaptha spreagtha ag obair [balaclark]. Mar is amhlaidh le Epub, is féidir leabhair a nascleanúint ag baint úsáide as an méarchlár chomh maith le nascleanúint luiche nó tadhaill. Gineann Reader innéacs amhairc de gach leathanach, taispeántar sa bharra taoibh (is féidir giniúint mionsamhlacha a dhíchumasú le haghaidh gléasanna ísealchuimhne agus/nó luas). Toisc gur minic go mbíonn cáilíocht éagsúil ag comhaid CBx, soláthraítear sraith de scagairí feabhsaithe íomhá.\n\nFéach ar [README] le haghaidh faisnéis níos cuimsithí ar ghnéithe agus míghnéithe féideartha na haipe seo.\n\n[epub.js]: https://github.com/futurepress/epub.js\n[Epub]: http://idpf.org/epub\n[CBR agus CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n[balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n[PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n[pdf.js]: https://github.com/mozilla/pdf.js\n[README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md",
+    "custom font" : "cló saincheaptha",
+    "monospace" : "monaspás",
+    "font size" : "méid cló",
+    "font weight" : "meáchan cló",
+    "Use custom colors" : "Bain úsáid as dathanna saincheaptha",
+    "night mode can be toggled by clicking the book title" : "is féidir modh oíche a scoránaigh trí theideal an leabhair a chliceáil",
+    "reflow text when sidebars are open" : "reflow téacs nuair a bhíonn barraí taoibh oscailte",
+    "disable extra-wide page turn areas" : "díchumasaigh réimsí seach-leathan cas leathanach",
+    "show page turn arrows" : "taispeáin saigheada cas leathanach",
+    "menu" : "roghchlár",
+    "Reader" : "Léitheoir",
+    "Select file types for which Reader should be the default viewer." : "Roghnaigh cineálacha comhaid ar cheart go mbeadh Reader mar an t-amharcóir réamhshocraithe.",
+    "Epub" : "epub",
+    "PDF" : "PDF",
+    "CBR/CBZ" : "CBR/CBZ"
 },
 "nplurals=5; plural=(n==1 ? 0 : n==2 ? 1 : n<7 ? 2 : n<11 ? 3 : 4);");
