@@ -9,7 +9,7 @@ OC.L10N.register(
     "monospace" : "بنط ثابت الحيّز",
     "font size" : "حجم الخط",
     "font weight" : "ثخانة الخط",
-    "Use custom colors" : "إستخدم ألواناً مُخصّصة",
+    "Use custom colors" : "إستخدم ألواناً مخصصة",
     "night mode can be toggled by clicking the book title" : "يمكن التبديل من/إلى الوضع الليلي بضغط عنوان الكتاب",
     "reflow text when sidebars are open" : "أعِد النصّ عندما تكون الأشرطة الجانبية مفتوحة",
     "disable extra-wide page turn areas" : "تعطيل مناطق تقليب الصفحات العريضة للغاية",
