@@ -1,0 +1,24 @@
+OC.L10N.register(
+    "epubreader",
+    {
+    "Settings updated successfully." : "تەڭشەكلەر مۇۋەپپەقىيەتلىك يېڭىلاندى.",
+    "EPUB/CBZ/PDF ebook reader" : "EPUB / CBZ / PDF ئېلېكترونلۇق كىتاب ئوقۇغۇچ",
+    "A multi-format browser-based ebook reader, supports EPUB and CBR/CBZ" : "كۆپ خىل شەكىلدىكى توركۆرگۈچنى ئاساس قىلغان ئېلېكترونلۇق كىتاب ئوقۇغۇچ ، EPUB ۋە CBR / CBZ نى قوللايدۇ",
+    "# Reader\nReader is an ebook reader based on pure javascript renderers. It works for publications formatted according to the following standards:\n\n - [Epub]\n - [PDF]\n - [CBR and CBZ] ('comics')\n\nFor Epub Reader uses the futurepress [epub.js] renderer to provide near-native looks, especially when used full-screen. Turn pages by pressing the left/right hand side of the screen/window or using the cursor keys (if you have those), use the sidebar to browse through chapters or bookmarks and add annotations.\n\nPDF is handled by Mozilla's [pdf.js] renderer in combination with a custom reader app to enable side-by-side display, batch search and more. Controls are like those used in the Epub renderer with a few exceptions, e.g. night mode has not been implemented yet.\n\nCBR and CBZ are supported using a custom renderer inspired by [balaclark]'s work. As with Epub, books can be navigated using the keyboard as well as mouse or touch navigation. Reader generates a visual index of all pages, show in the sidebar (thumbnail generation can be disabled for low-memory and/or -speed devices). As CBx files are often of varying quality, a set of image enhancement filters are provided.\n\nSee [README] for more exhaustive information on features and potential misfeatures of this app.\n\n   [epub.js]: https://github.com/futurepress/epub.js\n   [Epub]: http://idpf.org/epub\n   [CBR and CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n   [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n   [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n   [pdf.js]: https://github.com/mozilla/pdf.js\n   [README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md" : "# Reader\nئوقۇرمەن ساپ javascript كۆرسەتكۈچىنى ئاساس قىلغان ئېلېكترونلۇق كىتاب ئوقۇغۇچ. ئۇ تۆۋەندىكى ئۆلچەم بويىچە فورماتلانغان نەشر بۇيۇملىرى ئۈچۈن ئىشلەيدۇ:\n\n - [Epub]\n - [PDF]\n - [CBR and CBZ] ('يۇمۇرلار')\n\nEpub Reader ئۈچۈن Futurepress [epub.js] ئۈندىدارنى ئىشلىتىپ ، يېقىن ئەتراپتىكى كۆرۈنۈشلەرنى تەمىنلەيدۇ ، بولۇپمۇ پۈتۈن ئېكران ئىشلىتىلگەندە. ئېكران / كۆزنەكنىڭ سول / ئوڭ تەرىپىنى بېسىش ياكى نۇر بەلگە كۇنۇپكىسىنى ئىشلىتىش ئارقىلىق بەتلەرنى ئايلاندۇرۇڭ ، يانبالداقنى ئىشلىتىپ باب ياكى خەتكۈچلەرنى كۆرۈڭ ۋە ئىزاھلارنى قوشۇڭ.\n\nPDF Mozilla نىڭ [pdf.js] ئۈندىدار تەرىپىدىن مەخسۇس ئوقۇرمەن ئەپ دېتالى بىلەن بىر تەرەپ قىلىنغان بولۇپ ، يانمۇ-يان كۆرسىتىش ، تۈركۈملەپ ئىزدەش ۋە باشقىلارنى تەمىنلەيدۇ. كونترول قىلىش Epub كۆرسەتكۈچىدە ئىشلىتىلگەنگە ئوخشاش ، بىر قانچە مۇستەسنا ئەھۋاللار بار. كەچلىك ھالەت تېخى يولغا قويۇلمىدى.\n\nCBR ۋە CBZ [balaclark] نىڭ ئەسىرىدىن ئىلھاملانغان ئىختىيارى كۆرسەتكۈچنى قوللايدۇ. Epub غا ئوخشاش ، كۇنۇپكا تاختىسى شۇنداقلا مائۇس ياكى سېزىمچان يول باشلاش ئارقىلىق كىتابلارنى يېتەكلىگىلى بولىدۇ. ئوقۇرمەن بارلىق بەتلەرنىڭ كۆرۈنۈش كۆرسەتكۈچى ھاسىل قىلىدۇ ، يانبالداقتا كۆرسىتىلىدۇ (كىچىك ئىچكى ساقلىغۇچ ۋە / ياكى تېز سۈرئەتلىك ئۈسكۈنىلەردە كىچىك كۆرۈنۈشنى چەكلىگىلى بولىدۇ). CBx ھۆججىتى ھەمىشە ئوخشىمىغان سۈپەتتە بولغاچقا ، بىر يۈرۈش رەسىمنى ئاشۇرۇش سۈزگۈچ تەمىنلەنگەن.\n\nبۇ دېتالنىڭ ئىقتىدارلىرى ۋە يېتەرسىزلىكلىرى توغرىسىدىكى تېخىمۇ كۆپ ئۇچۇرلارنى [README] دىن كۆرۈڭ.\n\n   [epub.js]: https://github.com/futurepress/epub.js\n   [Epub]: http://idpf.org/epub\n   [CBR ۋە CBZ]: https://wiki.mobileread.com/wiki/CBR_and_CBZ\n   [balaclark]: https://github.com/balaclark/HTML5-Comic-Book-Reader\n   [PDF]: https://en.wikipedia.org/wiki/Portable_Document_Format\n   [pdf.js]: https://github.com/mozilla/pdf.js\n   [README]: https://github.com/e-alfred/epubreader/blob/master/epubreader/README.md",
+    "custom font" : "ئىختىيارى خەت نۇسخىسى",
+    "monospace" : "monospace",
+    "font size" : "خەت چوڭلۇقى",
+    "font weight" : "خەت ئېغىرلىقى",
+    "Use custom colors" : "ئىختىيارى رەڭلەرنى ئىشلىتىڭ",
+    "night mode can be toggled by clicking the book title" : "كەچلىك ھالەتنى كىتابنىڭ نامىنى چېكىش ئارقىلىق ئالماشتۇرغىلى بولىدۇ",
+    "reflow text when sidebars are open" : "يان بالداق ئېچىلغاندا تېكىستنى ئەكىس ئەتتۈرۈڭ",
+    "disable extra-wide page turn areas" : "ئالاھىدە بەت بەت رايونىنى چەكلەڭ",
+    "show page turn arrows" : "بەت بۇرۇلۇش يا ئوقلىرىنى كۆرسىتىدۇ",
+    "menu" : "تىزىملىك",
+    "Reader" : "Reader",
+    "Select file types for which Reader should be the default viewer." : "Reader كۆڭۈلدىكى كۆرگۈچ بولۇشى كېرەك بولغان ھۆججەت تىپلىرىنى تاللاڭ.",
+    "Epub" : "Epub",
+    "PDF" : "PDF",
+    "CBR/CBZ" : "CBR / CBZ"
+},
+"nplurals=2; plural=(n != 1);");
