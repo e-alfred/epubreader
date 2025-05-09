@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function () {
             };
 
             OC.msg.startSaving('#reader-personal .msg');
-            $.post(OC.filePath('epubreader', 'lib', 'personal-back.php'), data, readerSettings.afterSave);
+            $.post(OC.generateUrl('apps/epubreader/settings/set'), data, readerSettings.afterSave);
         },
         afterSave : function(data){
             OC.msg.finishedSaving('#reader-personal .msg', data);
