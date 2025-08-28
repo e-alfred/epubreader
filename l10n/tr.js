@@ -11,7 +11,7 @@ OC.L10N.register(
     "font weight" : "yazı kalınlığı",
     "Use custom colors" : "Özel renkler kullanılsın",
     "night mode can be toggled by clicking the book title" : "gece kipi kitap başlığına tıklayarak açılıp kapatılabilir",
-    "reflow text when sidebars are open" : "kenar çubukları açıkken metin yeniden akıtılsın",
+    "reflow text when sidebars are open" : "kenar çubukları açıkken yazı yeniden akıtılsın",
     "disable extra-wide page turn areas" : "çok geniş sayfa çevirme alanlarını kullanımdan kaldır",
     "show page turn arrows" : "sayfa çevirme oklarını görüntüle",
     "menu" : "menü",
