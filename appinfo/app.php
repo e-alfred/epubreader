@@ -19,4 +19,3 @@ $l = \OC::$server->getL10N('epubreader');
 
 \OCA\Epubreader\Hooks::register();
 Util::addscript('epubreader', 'plugin');
-\OCP\App::registerPersonal('epubreader', 'personal');

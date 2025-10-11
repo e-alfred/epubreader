@@ -48,4 +48,8 @@ See [README] for more exhaustive information on features and potential misfeatur
     <dependencies>
         <nextcloud min-version="21" max-version="23"/>
     </dependencies>
+	<settings>
+		<personal>OCA\Epubreader\Settings\Personal</personal>
+		<personal-section>OCA\Epubreader\Settings\PersonalSection</personal-section>
+	</settings>
 </info>
