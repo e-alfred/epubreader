@@ -23,9 +23,8 @@ document.onreadystatechange = function () {
         options.session.preferences = $session.data('preferences') || {};
         options.session.defaults = $session.data('defaults') || {};
         options.session.basePath = $session.data('basepath');
+        options.session.staticPath = $session.data('staticpath');
         options.session.downloadLink = $session.data('downloadlink');
-
-        console.log(options.session.basePath);
 
 
         /* functions return jquery promises */
@@ -118,6 +117,7 @@ document.onreadystatechange = function () {
         EPUBJS.filePath = "vendor/epubjs/";
         EPUBJS.cssPath = "vendor/epubjs/css/";
         EPUBJS.basePath = $('.session').data('basepath');
+		EPUBJS.staticPath = $('.session').data('staticpath');
 
         /* device-specific boilerplate */
 
@@ -145,7 +145,7 @@ document.onreadystatechange = function () {
     function renderPdf(file, options) {
         PDFJS.filePath = "vendor/pdfjs/";
         PDFJS.imageResourcesPath = "vendor/pdfjs/css/images/";
-        PDFJS.workerSrc = options.session.basePath + 'vendor/pdfjs/lib/pdf.worker.js';
+        PDFJS.workerSrc = options.session.staticPath + 'vendor/pdfjs/lib/pdf.worker.js';
 
         var reader = pdfReader(file, options);
     }
