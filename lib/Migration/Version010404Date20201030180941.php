@@ -70,7 +70,7 @@ class Version010404Date20201030180941 extends SimpleMigrationStep {
 			]);
 			$table->addColumn('content', 'string', [
 				'notnull' => false,
-				'length' => 4096,
+				'length' => 4000,
 			]);
 			$table->addColumn('last_modified', 'bigint', [
 				'notnull' => false,
@@ -116,7 +116,7 @@ class Version010404Date20201030180941 extends SimpleMigrationStep {
 			]);
 			$table->addColumn('value', 'string', [
 				'notnull' => true,
-				'length' => 4096,
+				'length' => 4000,
 				'default' => '',
 			]);
 			$table->addColumn('last_modified', 'bigint', [
